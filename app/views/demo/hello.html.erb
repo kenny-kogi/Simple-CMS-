@@ -1,0 +1,13 @@
+<h1>This is the Hello Page</h1>
+
+<%# Instance variable start with @ %>
+<% @array.each do |n|%>
+   <p> <%= n%> </p>
+<%end%>
+
+<%# Creating a link to another page, 1st argument is the page name and 2nd is the target  %>
+<%= link_to("index Page", {:action => "index"}) %>
+
+<%# Using the hello page params %>
+ID: <%= @id%>
+Page: <%= @page%>
